@@ -1,0 +1,30 @@
+/*
+
+
+
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //int spot = 21;
+    int a = 0;
+    int b = 1;
+    int i = 1;
+
+    do{
+        a = a + b;
+        cout << a << endl;
+        i++;
+        if (i < 21) {
+            b = a + b;
+            cout << b << endl;
+            i++;
+        }
+    } while (i < 21);
+
+    return 0;
+}

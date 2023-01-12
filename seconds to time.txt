@@ -1,0 +1,25 @@
+/*
+
+Sec => hr:mins:sec
+
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int sec;
+	int hrs;
+	int mins;
+
+	cout << "Enter time in seconds: ";
+	cin >> sec;
+
+	hrs = sec / 3600;
+	mins = (sec / 60) - (hrs * 60);
+	sec = sec - (mins*60) - (hrs * 3600);
+
+	cout << hrs << ":" << mins << ":" << sec;
+}
